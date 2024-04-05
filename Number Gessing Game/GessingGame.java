@@ -35,7 +35,10 @@ public class GessingGame {
 				}
 				count++;
 				System.out.println("Remaining Attempts : "+(TotalAttempt-count));
-				if(count==TotalAttempt)break;
+				if(count==TotalAttempt) {
+					System.out.println("Sorry You are out of attempts NO Is : "+random);
+					break;
+				}
 			}while(guess!=0);
 			TotalGamePlayed++;
 			TotalGuess+=count;
